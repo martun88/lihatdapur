@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_recipes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.meivaldi.mejile.AddRecipesActivity">
+
+    <LinearLayout
+        android:isScrollContainer="true"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorLight">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorRed"
+            android:titleTextColor="@color/colorLight"
+            android:id="@+id/toolbar">
+
+            <TextView
+                android:paddingLeft="-16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LihatDapur"
+                android:textColor="@color/colorLight"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center_horizontal"/>
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="@color/colorTab">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="+"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Upload Foto"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:id="@+id/recipes"
+            android:isScrollContainer="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_focus"
+                android:hint="Judul masakanmu"
+                android:padding="10dp"
+                android:layout_margin="@dimen/activity_vertical_margin"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Deskripsi makananmu"
+                android:padding="10dp"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:background="@drawable/edit_text_focus"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_login"
+                android:textColor="@color/colorLight"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:text="publish resep"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
