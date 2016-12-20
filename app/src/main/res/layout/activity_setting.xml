@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.meivaldi.mejile.SettingActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorRed"
+        android:id="@+id/toolbar">
+
+        <TextView
+            android:paddingLeft="-16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LihatDapur"
+            android:textColor="@color/colorLight"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center_horizontal"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listSettings"
+        android:background="@color/colorLight"
+        android:orientation="vertical">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvSettings">
+
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/listSettings"
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_margin="5dp"
+            android:background="@drawable/button_login"
+            android:textColor="#fff"
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGOUT"/>
+
+    </LinearLayout>
+</RelativeLayout>
